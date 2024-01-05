@@ -9,7 +9,7 @@ There are three different settings displayed on the top of the page{PlayerMode, 
 ### Difficulty{Easy, Medium, Hard}:
     The difficulty is only applicible to 1 Player Mode and determines the level of difficulty of the CPU
     
-####Easy:   
+#### Easy:   
 This CPU's moves are mostly random as it moves to one of the corners 60% of the time, the center 30% of the time, and an edge 10% of the time.
 
 #### Medium: 
