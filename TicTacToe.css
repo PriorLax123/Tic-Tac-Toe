@@ -1,0 +1,134 @@
+/* Author: Jackson Mishuk */
+
+body{
+    background-color: white;
+    
+}
+
+button[class=reset]:hover{
+    filter: brightness(92%);
+}
+
+.buttonDiv{
+    width: 90%;
+    left:5%; 
+    position: relative; 
+    display:flex; 
+    justify-content: space-between; 
+    height:60px;
+}
+.btn-group{
+    height: 100%;
+}
+
+#difficultyGroup label[class ~= disabled]{
+    background-color: rgba(128, 128, 128, 0.30);
+    filter: brightness(50%);
+}
+
+.btn{
+    font-weight: 500;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#settingsStatus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: 35px;
+    width: 436px;
+    position: relative;
+    left: calc(50% - 218px);
+    height: 70px;
+    visibility: hidden;
+    text-decoration: underline;
+    font-weight: 500;
+    color: red;
+    font-style: italic;
+}
+
+#contentContainer{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    height:70%;
+    left: 25%;
+    top: 100px;
+    
+    position: relative;
+    font-size: 20pt;
+    text-align: center;
+    bottom: 30px;
+    font-weight: bold;
+}
+
+#playerHeader{
+    width: 200px;
+    position: relative;
+    font-size: 20pt;
+    text-align: center;
+    left: calc(50% - 100px);
+    bottom: 20px;
+    font-weight: bold;
+}
+
+#indicateThinking{
+    visibility: hidden;
+    position: relative;
+    font-weight: 500;
+}
+
+#ticTacToeBoard{
+    user-select: none;
+    position: absolute;
+    top: calc(50% - 120px);
+    left: calc(50% - 120px);
+    height:240;
+    width:240;
+    border-collapse: collapse;
+    top: 25%;
+}
+
+tr{
+    position:relative;
+    height:80px;
+    width:100%;
+}
+td{
+    position:relative;
+    width:80px;
+    height: 100%;
+    text-align: center;
+    font-size: 26pt;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+tr + tr > td{
+    border-top: solid black 1px;
+}
+
+td + td{
+    border-left: solid black 1px;
+}
+
+
+.victoryTransition{
+    border-radius: 100%;
+    background-color: rgba(255, 0, 0, .18);
+    transform: rotate(3turn);
+    transition: 2s ease-in-out;
+}
+
+#resetButton{
+    width: 200px;
+    position: absolute;
+    font-size: 20pt;
+    text-align: center;
+    left: calc(50% - 100px);
+    bottom: 30px;
+    font-weight: bold;
+}
+

@@ -1,0 +1,88 @@
+<!-- Author: Jackson Mishuk -->
+
+<html>
+    <head>
+        <title>Tic-Tac-Toe</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="TicTacToe.css"/>
+    </head>
+    <body>
+        <!-- This buttons for settings changes{Start}-->
+        <div id="settingsDiv">
+            <div class="buttonDiv">
+                <div style="position: relative">
+                    <!-- Player Mode buttons {Start} -->
+                    <div class="btn-group h-100" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="playerMode" id="1PlayerMode" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="1PlayerMode">1 Player</label>
+                        
+                        <input type="radio" class="btn-check" name="playerMode" id="2PlayerMode" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="2PlayerMode">2 Player</label>
+                    </div>
+                    <!-- Player Mode buttons {End} -->
+                </div>
+                
+                <div style="position: relative">
+                    <!-- Difficulty Settings buttons {Start} -->
+                    <div id="difficultyGroup" class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="difficulty" id="Easy" autocomplete="off">
+                        <label class="btn btn-outline-success disabled" aria-disabled="true" for="Easy">Easy</label>
+                        
+                        <input type="radio" class="btn-check" name="difficulty" id="Medium" autocomplete="off">
+                        <label class="btn btn-outline-warning disabled" aria-disabled="true" for="Medium">Medium</label>
+                        
+                        <input type="radio" class="btn-check" name="difficulty" id="Hard" autocomplete="off">
+                        <label class="btn btn-outline-danger disabled" aria-disabled="true" for="Hard">Hard</label>
+                    </div>
+                    <!-- Difficulty Settings buttons {End} -->
+                </div>
+                
+                <div style=" position: relative">
+                    <!-- First Player Settings buttons {Start} -->
+                    <div class="btn-group h-100" role="group" aria-label="Basic radio toggle button group" style="right:0">
+                        <input type="radio" class="btn-check" name="firstPlayer" id="X" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="X">X First</label>
+                        
+                        <input type="radio" class="btn-check" name="firstPlayer" id="O" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="O">O First</label>
+                    </div>
+                    <!-- First Player Settings buttons {End} -->
+                </div>
+            </div>
+            
+            <span id="settingsStatus">
+                Settings will not be updated until game is reset! 
+                <button class="reset" onclick=restartGame()><b>Reset Now!</b></button>
+            </span>
+        </div>
+        <!-- This buttons for settings changes{End}-->
+
+        <!-- Container for the Player Header, Tic-Tac-Toe board, and reset button when the game reaches a termanal state {Start} -->
+        <div id="contentContainer">
+            <span id="playerHeader"></span>
+            <table id="ticTacToeBoard">
+                <tr id="r1">
+                    <td id="r1c1" onclick=handleClick(this,0)></td>
+                    <td id="r1c2" onclick=handleClick(this,1)></td>
+                    <td id="r1c3" onclick=handleClick(this,2)></td>
+                </tr>
+                <tr id="r2">
+                    <td id="r2c1" onclick=handleClick(this,3)></td>
+                    <td id="r2c2" onclick=handleClick(this,4)></td>
+                    <td id="r2c3" onclick=handleClick(this,5)></td>
+                </tr>
+                <tr id="r3">
+                    <td id="r3c1" onclick=handleClick(this,6)></td>
+                    <td id="r3c2" onclick=handleClick(this,7)></td>
+                    <td id="r3c3" onclick=handleClick(this,8)></td>
+                </tr>
+            </table>
+            <span id="indicateThinking">Computer is thinking!</span>
+            <button class="reset" id="resetButton" onclick=restartGame()>Reset Game!</button>
+        </div>
+        <!-- Container for the Player Header, Tic-Tac-Toe board, and reset button when the game reaches a termanal state {End} -->
+
+    </body>
+    <script src="TicTacToe.js"></script>
+</html>
