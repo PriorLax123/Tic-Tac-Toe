@@ -2,11 +2,11 @@
 
 There are three different settings displayed on the top of the page{PlayerMode, Difficulty, FirstPlayer}
 
-### PlayerMode{1 Player, 2 Player}:
+## PlayerMode{1 Player, 2 Player}:
 The player mode determines if you will be playing with two players, or if you will be playing against a CPU  
 NOTE: In 1 Player mode the player will always be X
 
-### Difficulty{Easy, Medium, Hard}:
+## Difficulty{Easy, Medium, Hard}:
 The difficulty is only applicible to 1 Player Mode and determines the level of difficulty of the CPU
     
 #### Easy:   
@@ -21,7 +21,7 @@ This CPU uses the minimax value of every potential play to make the best move ba
 is a good represention of how to make a best move in any case. The minimax is not perfect, but it gurentees that the CPU will never lose, and that 
 if there is a way for it to win, that the CPU will find it.
 
-### FirstPlayer{X First, O First}:
+## FirstPlayer{X First, O First}:
 Allows a user to pick if they want X or O to go first
 
 
