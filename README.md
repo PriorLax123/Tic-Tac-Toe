@@ -3,11 +3,11 @@
 There are three different settings displayed on the top of the page{PlayerMode, Difficulty, FirstPlayer}
 
 ### PlayerMode{1 Player, 2 Player}:
-    The player mode determines if you will be playing with two players, or if you will be playing against a CPU  
-    NOTE: In 1 Player mode the player will always be X
+The player mode determines if you will be playing with two players, or if you will be playing against a CPU  
+NOTE: In 1 Player mode the player will always be X
 
 ### Difficulty{Easy, Medium, Hard}:
-    The difficulty is only applicible to 1 Player Mode and determines the level of difficulty of the CPU
+The difficulty is only applicible to 1 Player Mode and determines the level of difficulty of the CPU
     
 #### Easy:   
 This CPU's moves are mostly random as it moves to one of the corners 60% of the time, the center 30% of the time, and an edge 10% of the time.
