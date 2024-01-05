@@ -25,4 +25,4 @@ if there is a way for it to win, that the CPU will find it.
 Allows a user to pick if they want X or O to go first
 
 
-Author: Jackson Mishuk
+ ###### Author: Jackson Mishuk
