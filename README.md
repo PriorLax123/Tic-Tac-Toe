@@ -1,5 +1,5 @@
 # Tic-Tac-Toe
-
+ 
 There are three different settings displayed on the top of the page{PlayerMode, Difficulty, FirstPlayer}
 
 ## PlayerMode{1 Player, 2 Player}:
